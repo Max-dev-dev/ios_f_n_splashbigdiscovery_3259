@@ -1,0 +1,65 @@
+{
+    "quiz": [
+      {
+        "image": "assets/images/quiz/1.png",
+        "answer_a": "Clownfish",
+        "answer_b": "Angelfish",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/2.png",
+        "answer_a": "Anglerfish",
+        "answer_b": "Piranha",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/3.png",
+        "answer_a": "Great White Shark",
+        "answer_b": "Angelfish",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/4.png",
+        "answer_a": "Neon Tetra",
+        "answer_b": "Betta Fish",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/5.png",
+        "answer_a": "Hammerhead Shark",
+        "answer_b": "Bluefin Tuna",
+        "right_answer": "answer_b"
+      },
+      {
+        "image": "assets/images/quiz/6.png",
+        "answer_a": "Piranha",
+        "answer_b": "Hammerhead Shark",
+        "right_answer": "answer_b"
+      },
+      {
+        "image": "assets/images/quiz/7.png",
+        "answer_a": "Guppy",
+        "answer_b": "Clownfish",
+        "right_answer": "answer_b"
+      },
+      {
+        "image": "assets/images/quiz/8.png",
+        "answer_a": "Betta Fish",
+        "answer_b": "Goldfish",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/9.png",
+        "answer_a": "Flounder",
+        "answer_b": "Salmon",
+        "right_answer": "answer_a"
+      },
+      {
+        "image": "assets/images/quiz/10.png",
+        "answer_a": "Piranha",
+        "answer_b": "Bass",
+        "right_answer": "answer_a"
+      }
+    ]
+  }
+  
