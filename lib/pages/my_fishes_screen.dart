@@ -25,7 +25,7 @@ class _MyFishesScreenState extends State<MyFishesScreen> {
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: const Color(0xFF6BAFC0),
       appBar: AppBar(
         backgroundColor: const Color(0xFF2D90A8),
         centerTitle: false,

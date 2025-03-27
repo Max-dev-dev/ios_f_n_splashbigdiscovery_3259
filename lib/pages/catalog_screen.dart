@@ -98,21 +98,6 @@ class _CatalogScreenState extends State<CatalogScreen> {
             color: Colors.white,
           ),
         ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: SizedBox(
-              width: 28,
-              height: 28,
-              child: IconButton(
-                padding: EdgeInsets.zero,
-                iconSize: 28,
-                onPressed: () {},
-                icon: const FaIcon(FontAwesomeIcons.gear, color: Colors.white),
-              ),
-            ),
-          ),
-        ],
       ),
       floatingActionButton: FloatingActionButton(
         heroTag: null,
