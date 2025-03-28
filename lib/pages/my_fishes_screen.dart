@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -132,7 +134,10 @@ class FishCard extends StatelessWidget {
                 width: 150,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(16),
-                  child: Image.asset(fish.image, fit: BoxFit.cover),
+                  child:
+                      fish.image.startsWith('/')
+                          ? Image.file(File(fish.image), fit: BoxFit.cover)
+                          : Image.asset(fish.image, fit: BoxFit.cover),
                 ),
               ),
             ),
@@ -383,13 +388,22 @@ class _DetailsScreenState extends State<DetailsScreen> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
-              child: Image.asset(
-                widget.image,
-                height: 280,
-                width: double.infinity,
-                fit: BoxFit.fill,
-              ),
+              child:
+                  widget.image.startsWith('/')
+                      ? Image.file(
+                        File(widget.image),
+                        height: 280,
+                        width: double.infinity,
+                        fit: BoxFit.fill,
+                      )
+                      : Image.asset(
+                        widget.image,
+                        height: 280,
+                        width: double.infinity,
+                        fit: BoxFit.fill,
+                      ),
             ),
+
             const SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.symmetric(
