@@ -214,18 +214,18 @@ class _UrlWebViewAppState extends State<UrlWebViewApp> {
               }
               return handleDeepLink(uri: uri, controller: controller, ctx: context);
             },
-              onCreateWindow: (controller, req) async {
-                Navigator.of(context).push(
-                  CupertinoPageRoute(
-                    builder: (_) => WebPopupScreen(
-                      initialUrl: req.request.url?.toString() ?? 'about:blank',
-                      windowId: req.windowId,
-                    ),
+            onCreateWindow: (controller, req) async {
+              Navigator.of(context).push(
+                CupertinoPageRoute(
+                  builder: (_) => WebPopupScreen(
+                    initialUrl: req.request.url?.toString() ?? 'about:blank',
+                    windowId: req.windowId,
                   ),
-                );
-                return true;
-              },
-              onConsoleMessage: (controller, consoleMessage) {
+                ),
+              );
+              return true;
+            },
+            onConsoleMessage: (controller, consoleMessage) {
               print('Console: ${consoleMessage.message}');
             },
           ),
@@ -346,4 +346,3 @@ class _NavigationBar extends StatelessWidget {
     );
   }
 }
-

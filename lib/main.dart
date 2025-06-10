@@ -21,6 +21,7 @@ void main() {
   final dateOff = DateTime(2024, 6, 11, 20, 00);
 
   final initialRoute = now.isBefore(dateOff) ? '/white' : '/verify';
+
   runApp(RootApp(
     initialRoute: initialRoute,
     whiteScreen: MainApp(),
