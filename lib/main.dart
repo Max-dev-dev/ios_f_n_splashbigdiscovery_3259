@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ios_f_n_splashbigdiscovery_3259/cubit/my_fish_cubit.dart';
 import 'package:ios_f_n_splashbigdiscovery_3259/pages/splash_screen.dart';
 import 'package:ios_f_n_splashbigdiscovery_3259/ver_screen.dart';
-import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 
 class AppConstants {
   static const String oneSignalAppId = "997c8960-5db5-4c8d-ab72-3e45da9f3dc4";
@@ -21,12 +20,10 @@ void main() {
   final now = DateTime.now();
   final dateOff = DateTime(2024, 6, 11, 20, 00);
 
-  final status = AppTrackingTransparency.requestTrackingAuthorization();
-
   final initialRoute = now.isBefore(dateOff) ? '/white' : '/verify';
   runApp(RootApp(
     initialRoute: initialRoute,
-    whiteScreen: const MainApp(),
+    whiteScreen: MainApp(),
   ));
 }
 class MainApp extends StatelessWidget {

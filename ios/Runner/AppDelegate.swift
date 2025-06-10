@@ -43,6 +43,13 @@ import AdSupport
         result(FlutterMethodNotImplemented)
       }
     }
+
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
+
+    override func applicationDidBecomeActive(_ application: UIApplication) {
+      if #available(iOS 14, *) {
+        ATTrackingManager.requestTrackingAuthorization { _ in }
+      }
+    }
 }
