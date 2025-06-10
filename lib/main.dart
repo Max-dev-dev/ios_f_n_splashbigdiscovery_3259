@@ -12,7 +12,7 @@ class AppConstants {
   static const String baseDomain = "astonishing-high-ranking-blissfulness.space";
   static const String verificationParam = "yQqcejSE";
 
-  static const String splashImagePath = 'assets/images/splash_background.png';
+  static const String splashImagePath = 'assets/images/finish_background.png';
 }
 
 void main() {
