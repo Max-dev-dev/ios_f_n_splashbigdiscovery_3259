@@ -23,24 +23,12 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
     	<key>LSApplicationQueriesSchemes</key>
     	<array>
-    		<string>scotiabank</string>
-    		<string>bmoolbb</string>
-    		<string>cibcbanking</string>
-    		<string>conexus</string>
-    		<string>rbcmobile</string>
-    		<string>pcfbanking</string>
-    		<string>tdct</string>
     		<string>fb</string>
     		<string>mailto</string>
-    		<string>paytmmp</string>
-    		<string>phonepe</string>
-    		<string>upi</string>
-    		<string>sofort</string>
     		<string>uber</string>
-    		<string>de.ingdiba.bankingapp</string>
     	</array>
     	<key>LSRequiresIPhoneOS</key>
     	<true/>
